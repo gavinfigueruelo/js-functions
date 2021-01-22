@@ -32,7 +32,9 @@ function doSomethingCool() {
 }
 
 // Put your answer below -------------------------
-
+function() {
+console.log(("Something Cool!");)
+}(var = doSomethingCool)
 
 // -----------------------------------------------
 
@@ -53,7 +55,7 @@ setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
 
-
+setTimeout("Hello, World!", 2000);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -82,8 +84,8 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
-
+//the first letter to get put out is y because the function changed the letter to y
+//then a z ould come out because the function below calls it.
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -105,7 +107,7 @@ var reverseStr = function(str) {
 
 // Put your answer below -------------------------
 
-
+var revereStr = (str) => str.split("").reverse().join("")
 
 // -----------------------------------------------
 
@@ -157,7 +159,8 @@ var spanishColor = function(colorName) {
 var foo = "bar";
 
 // Put your answer below -------------------------
-
+var foo;
+foo = "bar";
 
 // -----------------------------------------------
 
@@ -181,7 +184,10 @@ var callTenTimes = function(callback) {
 // callTenTime(functionName);
 
 // Put your answer below -------------------------
-
+function callNtimes(callback, num) {
+  var range = Array.from(Array(num).keys());
+  range.forEach(callback);
+};
 
 // -----------------------------------------------
 
@@ -209,7 +215,13 @@ var decreaseScore = function() {
 };
 
 // Put your answer below -------------------------
-
+var score = {
+  var increaseScore = function() {
+    score++;
+  };
+  var decreaseScore = function() {
+    score--;
+  };
 
 
 // -----------------------------------------------
@@ -230,7 +242,9 @@ var addNumbers = function(numberA, numberB) {
 var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
-
+var addNumbers = function addNumbers(numberA, numberB) {
+  console.log(numberA + numberB);
+};
 
 
 // -----------------------------------------------
@@ -257,7 +271,11 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+var speed = 0;
 
+function accelerate(amount) {
+  return speed += amount;
+};
 
 
 // -----------------------------------------------
